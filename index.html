@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Videco</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Home Section -->
+
+  <section id="home">
+
+    <div class="home-container">
+
+      <img src="https://cloud-exjlaisdw-hack-club-bot.vercel.app/0d30d1184acc0ef556beb3b6e991312-unscreen.gif" alt="Left Image" class="home-image left">
+
+      <div class="home-content">
+
+        <h1>Welcome to the Videco Experience!</h1>
+
+        <p>Draw and interact with the video stream using doodles, text, emojis, and much more.</p>
+
+      </div>
+
+      <img src="https://cloud-exjlaisdw-hack-club-bot.vercel.app/106723e9c88b9f9f95ee3a6a7478bbd-unscreen.gif" alt="Right Image" class="home-image right">
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Video and Canvas Section -->
+
+  <div class="video-container">
+
+    <video id="video" autoplay></video>
+
+    <canvas id="overlay"></canvas>
+
+  </div>
+
+
+
+  <!-- Controls Section -->
+
+  <div class="controls">
+
+    <input type="text" id="textInput" placeholder="Enter text here">
+
+    <input type="color" id="textColor" value="#ffffff">
+
+    <button onclick="addText()">Add Text</button>
+
+    
+
+    <select id="emojiSelect">
+
+      <option value="😀">😀</option>
+
+      <option value="🎉">🎉</option>
+
+      <option value="❤️">❤️</option>
+
+      <option value="🚀">🚀</option>
+
+      <option value="🌟">🌟</option>
+
+    </select>
+
+    <button onclick="addEmoji()">Add Emoji</button>
+
+
+
+    <select id="gifSelect">
+
+      <option value="https://cloud-l0ava2lbn-hack-club-bot.vercel.app/49109def875722cc990cf996dd2bc9c-unscreen.gif">console</option>
+
+      <option value="https://cloud-l0ava2lbn-hack-club-bot.vercel.app/37f9624334d322f6c0f2268ac2db7a0-unscreen.gif">globe</option>
+
+      <option value="https://cloud-l0ava2lbn-hack-club-bot.vercel.app/06e07598f1827c395ec742fad5e382d-unscreen.gif">music</option>
+
+      <option value="https://cloud-l0ava2lbn-hack-club-bot.vercel.app/1bb42262b0d941ecd34fe9043c17191-unscreen.gif">cd</option>
+
+      <option value="https://cloud-exjlaisdw-hack-club-bot.vercel.app/0d30d1184acc0ef556beb3b6e991312-unscreen.gif">rubixcube</option>
+
+      <option value="https://cloud-l0ava2lbn-hack-club-bot.vercel.app/2554843bf71dfa8619b8970a6905d22-unscreen.gif">anime girl</option>
+
+    </select>
+
+    <button onclick="addGif()">Add Gif</button>
+
+    <button onclick="toggleDoodle()">Toggle Doodle</button>
+
+
+
+    <!-- Font Selector -->
+
+    <label for="fontSelector">Change Font:</label>
+
+    <select id="fontSelector" onchange="changeFont()">
+
+      <option value="Comic Sans MS">Comic Sans MS</option>
+
+      <option value="Impact">Impact</option>
+
+      <option value="Courier New">Courier New</option>
+
+      <option value="Arial">Arial</option>
+
+      <option value="Verdana">Verdana</option>
+
+    </select>
+
+  </div>
+
+  <button id="clearAllBtn">Clear All</button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
